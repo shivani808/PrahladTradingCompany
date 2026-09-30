@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prahlad Trading Company - Industrial Safety Equipment Supplier | Raipur</title>
+  <meta name="description" content="Prahlad Trading Company - Authorized dealer of Acme, Udyogi, Tiger, Mallcom, Karam safety products. Premium PPE supplier in Raipur serving industries for 20+ years.">
+  <meta name="keywords" content="Safety Equipment, PPE, Industrial Safety, Raipur, Safety Helmets, Safety Shoes, Acme, Udyogi, Tiger, Mallcom, Karam, Welding, Fire Safety, Omex">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fdf8f6',
+              100: '#f2e8e5',
+              500: '#c85a3a',
+              600: '#b24c2e',
+              700: '#8e371f',
+              accent: '#e8a570'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float { animation: float 4s ease-in-out infinite; }
+    
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Modal Backdrop Blur */
+    .modal-backdrop {
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-accent flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="shield-alert" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">Prahlad Trading</span>
+          <span class="text-xs font-semibold text-brand-500 tracking-wider uppercase">Industrial Safety Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#products" class="text-sm font-semibold text-slate-600 hover:text-brand-500 transition-colors">Products</a>
+        <a href="#brands" class="text-sm font-semibold text-slate-600 hover:text-brand-500 transition-colors">Brands</a>
+        <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-brand-500 transition-colors">About Us</a>
+        <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brand-500 transition-colors">Contact</a>
+        <button onclick="scrollToSection('contact')" class="bg-slate-900 hover:bg-brand-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-sm">
+          Get Quote
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg focus:outline-none" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+      <a href="#products" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-500">Products</a>
+      <a href="#brands" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-500">Brands</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-500">About Us</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-500">Contact</a>
+      <button onclick="toggleMobileMenu(); scrollToSection('contact')" class="w-full bg-brand-600 text-white py-3 rounded-lg font-semibold text-center shadow-sm">
+        Get Quote
+      </button>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden py-20 lg:py-28">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#c85a3a_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-accent text-xs font-semibold tracking-wide uppercase">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            20+ Years of Excellence in Raipur
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+            Premium Industrial <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-orange-400 to-amber-300">Safety Equipment</span>
+          </h1>
+          
+          <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Authorized distributor of certified safety gear. Safeguarding workforce across Chhattisgarh with top brands like Acme, Karam, Udyogi, Mallcom & Omex.
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <button onclick="scrollToSection('products')" class="px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg shadow-brand-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+              Explore Products
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+            <button onclick="scrollToSection('contact')" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+              Contact Sales
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-500 to-brand-accent opacity-30 blur-xl animate-pulse"></div>
+            <div class="relative bg-slate-800/90 border border-slate-700 rounded-3xl p-8 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between border-b border-slate-700/80 pb-4">
+                <span class="text-sm font-semibold text-slate-400 uppercase tracking-wider">Product Coverage</span>
+                <span class="text-xs bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">100% Authentic</span>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                  <span class="text-3xl mb-1">⛑️</span>
+                  <span class="text-xs font-semibold text-slate-300">Head Protection</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                  <span class="text-3xl mb-1">👢</span>
+                  <span class="text-xs font-semibold text-slate-300">Foot Protection</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                  <span class="text-3xl mb-1">🦺</span>
+                  <span class="text-xs font-semibold text-slate-300">Body Protection</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                  <span class="text-3xl mb-1">🧯</span>
+                  <span class="text-xs font-semibold text-slate-300">Fire Safety</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white border-b border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-slate-100">
+        <div class="p-4 space-y-1">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-500">20+</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Years Experience</div>
+        </div>
+        <div class="p-4 space-y-1">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-500">50+</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Trusted Brands</div>
+        </div>
+        <div class="p-4 space-y-1">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-500">10k+</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Happy Clients</div>
+        </div>
+        <div class="p-4 space-y-1">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-500">100%</div>
+          <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Certified Gear</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Safety Product Categories</h2>
+        <p class="text-slate-600 text-base">Select any category to view full specifications, item lists, and authorized manufacturer options.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Category Card 1 -->
+        <div onclick="openModal('headSafety')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-orange-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">⛑️</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Head Protection</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Safety helmets and hard hats - Karam, Udyogi, Tiger. ISI certified impact resistance.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 2 -->
+        <div onclick="openModal('footSafety')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-amber-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">👢</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Foot Protection</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Safety shoes & boots - Acme Universal, Karam, Mallcom Tiger & Leopard lines.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 3 -->
+        <div onclick="openModal('bodyProtection')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-blue-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">🦺</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Body Protection</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">High-vis jackets, reflective vests, aprons - Udyogi, Karam & custom gear.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 4 -->
+        <div onclick="openModal('handProtection')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">🧤</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Hand Protection</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Work gloves, cut-resistant, nitrile, welding & electrical insulated gloves.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 5 -->
+        <div onclick="openModal('eyeProtection')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-indigo-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">👓</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Eye Protection</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Safety glasses, tinted welding goggles, polycarbonate impact-resistant eyewear.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 6 -->
+        <div onclick="openModal('respiratory')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-cyan-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">🫁</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Respiratory Protection</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">N95 dust masks, double cartridge respirators & full-face gas protection.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 7 -->
+        <div onclick="openModal('welding')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-rose-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">🔥</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Welding Products</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Auto-darkening helmets, leather aprons, welding sleeves & heat shields.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 8 -->
+        <div onclick="openModal('fireSafety')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-red-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">🧯</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Fire Safety</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">ABC dry powder, CO2 extinguishers & fire safety equipment - Omex.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+        <!-- Category Card 9 -->
+        <div onclick="openModal('fallProtection')" class="group bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-purple-50 text-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">⛓️</div>
+            <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-500 transition-colors mb-2">Fall Protection</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Full-body safety harnesses, shock-absorbing lanyards & anchorage points.</p>
+          </div>
+          <div class="flex items-center text-sm font-bold text-brand-500 group-hover:translate-x-1 transition-transform">
+            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="brands" class="py-20 bg-white border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Authorized Brand Partners</h2>
+        <p class="text-slate-600 text-base">We directly source from India's most certified and reputable manufacturers.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        
+        <!-- Brand 1 -->
+        <div class="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl text-center flex flex-col items-center justify-center hover:border-brand-500 hover:shadow-lg transition-all">
+          <div class="w-full h-20 bg-gradient-to-r from-brand-600 to-brand-accent rounded-xl flex items-center justify-center font-black text-white text-2xl tracking-wider mb-4 shadow-sm">
+            ACME
+          </div>
+          <h4 class="font-bold text-slate-900">Acme Universal</h4>
+          <p class="text-xs text-slate-500 mt-1">India's Largest Safety Shoe Manufacturer</p>
+        </div>
+
+        <!-- Brand 2 -->
+        <div class="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl text-center flex flex-col items-center justify-center hover:border-brand-500 hover:shadow-lg transition-all">
+          <div class="w-full h-20 bg-white rounded-xl flex items-center justify-center p-3 mb-4 shadow-sm border border-slate-100">
+            <img src="https://www.karam.in/sites/default/files/karam-logo-01.png" alt="Karam Industries Logo" class="max-h-12 max-w-full object-contain" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\'font-bold text-red-600 text-xl tracking-wide\'>KARAM</span>';">
+          </div>
+          <h4 class="font-bold text-slate-900">Karam Industries</h4>
+          <p class="text-xs text-slate-500 mt-1">Complete PPE Line (Noida)</p>
+        </div>
+
+        <!-- Brand 3 -->
+        <div class="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl text-center flex flex-col items-center justify-center hover:border-brand-500 hover:shadow-lg transition-all">
+          <div class="w-full h-20 bg-white rounded-xl flex items-center justify-center p-3 mb-4 shadow-sm border border-slate-100">
+            <img src="https://udyogisafety.com/_next/static/media/logo.0c4wcxcno46nr.svg" alt="Udyogi Safety Logo" class="max-h-12 max-w-full object-contain" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\'font-bold text-blue-800 text-xl tracking-wide\'>UDYOGI</span>';">
+          </div>
+          <h4 class="font-bold text-slate-900">Udyogi Safety</h4>
+          <p class="text-xs text-slate-500 mt-1">Premium Protective Gear (Kolkata)</p>
+        </div>
+
+        <!-- Brand 4 -->
+        <div class="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl text-center flex flex-col items-center justify-center hover:border-brand-500 hover:shadow-lg transition-all">
+          <div class="w-full h-20 bg-white rounded-xl flex items-center justify-center p-3 mb-4 shadow-sm border border-slate-100">
+            <img src="https://cdn.shopify.com/s/files/1/0606/6821/5434/files/mallcom_2x_8e0b2580-52e4-41b4-9f7d-187b23099d91.png?v=1674822764&width=250" alt="Mallcom Logo" class="max-h-12 max-w-full object-contain" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\'font-bold text-amber-600 text-xl tracking-wide\'>MALLCOM</span>';">
+          </div>
+          <h4 class="font-bold text-slate-900">Mallcom</h4>
+          <p class="text-xs text-slate-500 mt-1">Tiger & Leopard Safety Lines</p>
+        </div>
+
+        <!-- Brand 5 -->
+        <div class="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl text-center flex flex-col items-center justify-center hover:border-brand-500 hover:shadow-lg transition-all">
+          <div class="w-full h-20 bg-white rounded-xl flex items-center justify-center p-3 mb-4 shadow-sm border border-slate-100">
+            <img src="https://www.omex.co.in/assets/public/default/images/logo.png" alt="Omex Logo" class="max-h-12 max-w-full object-contain" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\'font-bold text-orange-600 text-xl tracking-wide\'>OMEX</span>';">
+          </div>
+          <h4 class="font-bold text-slate-900">Omex</h4>
+          <p class="text-xs text-slate-500 mt-1">Fire Safety & Extinguishers</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
+            About Our Company
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+            Prahlad Trading Company
+          </h2>
+          <p class="text-slate-600 leading-relaxed">
+            Prahlad Trading Company is a premier distributor of industrial safety equipment and Personal Protective Equipment (PPE) based in Raipur, Chhattisgarh. Founded by <strong>Bipin Agrawal</strong>, we have built over 20 years of trust through certified authenticity and uncompromising commitment to workplace protection.
+          </p>
+          <p class="text-slate-600 leading-relaxed">
+            We supply leading industrial plants, factories, contractors, and retail consumers with genuine ISI & ANSI-compliant gear.
+          </p>
+
+          <ul class="space-y-3 pt-2">
+            <li class="flex items-start gap-3 text-slate-700 text-sm font-medium">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5"></i>
+              Authorized dealer for Acme Universal, Karam, Udyogi, Mallcom & Omex
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 text-sm font-medium">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5"></i>
+              100% authentic ISI certified products with batch test reports
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 text-sm font-medium">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5"></i>
+              Competitive wholesale bulk rates & prompt localized distribution
+            </li>
+            <li class="flex items-start gap-3 text-slate-700 text-sm font-medium">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5"></i>
+              Dedicated safety consultations & on-site product demonstrations
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-brand-500 to-slate-900 p-8 sm:p-12 text-white shadow-2xl flex flex-col justify-between min-h-[380px]">
+            <div class="space-y-4">
+              <span class="text-5xl block">🏢</span>
+              <h3 class="text-2xl font-bold">Serving Raipur & Central India</h3>
+              <p class="text-slate-200 text-sm leading-relaxed">
+                Our warehouse maintains stock readiness across major safety categories to guarantee rapid order fulfillment for industrial facilities and construction teams.
+              </p>
+            </div>
+            <div class="pt-8 border-t border-white/20 flex items-center justify-between text-xs text-slate-300 font-semibold">
+              <span>ESTABLISHED DISTRIBUTOR</span>
+              <span>RAIPUR, CHHATTISGARH</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-bold">Get In Touch</h2>
+        <p class="text-slate-400 text-base">Contact us today for instant product quotes, bulk inquiries, or store visits.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Contact Card 1 -->
+        <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/80 text-center flex flex-col items-center space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-accent flex items-center justify-center">
+            <i data-lucide="phone" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-slate-200 text-base">Phone Number</h4>
+          <a href="tel:08109047714" class="text-lg font-bold text-brand-accent hover:underline">08109047714</a>
+          <p class="text-xs text-slate-400">Call for instant price list</p>
+        </div>
+
+        <!-- Contact Card 2 -->
+        <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/80 text-center flex flex-col items-center space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-accent flex items-center justify-center">
+            <i data-lucide="mail" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-slate-200 text-base">Email Address</h4>
+          <a href="mailto:prahladtrading@yahoo.co.in" class="text-sm font-semibold text-brand-accent hover:underline break-all">prahladtrading@yahoo.co.in</a>
+          <p class="text-xs text-slate-400">Send RFQ & inquiries</p>
+        </div>
+
+        <!-- Contact Card 3 -->
+        <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/80 text-center flex flex-col items-center space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-accent flex items-center justify-center">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-slate-200 text-base">Working Hours</h4>
+          <p class="text-sm font-medium text-slate-300">Mon - Sat: 10:30 AM - 7:30 PM</p>
+          <p class="text-xs text-slate-400">Sunday Closed</p>
+        </div>
+
+        <!-- Contact Card 4 -->
+        <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/80 text-center flex flex-col items-center space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-accent flex items-center justify-center">
+            <i data-lucide="map-pin" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-slate-200 text-base">Location</h4>
+          <p class="text-sm font-medium text-slate-300">Raipur, Chhattisgarh, India</p>
+          <p class="text-xs text-slate-400">Central Industrial Hub</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-xs text-slate-500">
+        © <span id="currentYear"></span> Prahlad Trading Company. All rights reserved. Premium Industrial Safety Supplier.
+      </div>
+      <div class="flex gap-6 text-xs font-medium">
+        <a href="#products" class="hover:text-white transition-colors">Products</a>
+        <a href="#brands" class="hover:text-white transition-colors">Brands</a>
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="productModal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4 sm:p-6 transition-opacity duration-300">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden transform transition-transform duration-300 scale-95" id="modalContainer">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-5 border-b border-slate-100 flex items-center justify-between bg-slate-50">
+        <div class="flex items-center gap-3">
+          <span id="modalIcon" class="text-2xl"></span>
+          <h3 id="modalTitle" class="text-xl font-bold text-slate-900">Category Details</h3>
+        </div>
+        <button onclick="closeModal()" class="w-9 h-9 rounded-full bg-slate-200/60 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-4" id="modalItems">
+        <!-- Dynamic content inserted here -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
+        <span class="text-xs font-semibold text-slate-500">Need custom procurement?</span>
+        <button onclick="closeModal(); scrollToSection('contact')" class="bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">
+          Inquire Now
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Product Data Configuration
+    const productData = {
+      headSafety: {
+        title: 'Head Protection Solutions',
+        icon: '⛑️',
+        items: [
+          {
+            name: 'Karam Safety Helmets',
+            desc: 'Premium helmets from Noida-based manufacturer. Features shock absorption, multiple colors, adjustable chin straps, ANSI Z89.1 compliant.'
+          },
+          {
+            name: 'Udyogi Safety Caps',
+            desc: 'Kolkata-manufactured bump caps for construction sites, lightweight ergonomic design, flexible rim protection.'
+          },
+          {
+            name: 'Karam Hard Hats (Advanced)',
+            desc: 'Heavy-duty protection with smart ventilation system, wide brim, and 6-point suspension harness for maximum comfort.'
+          },
+          {
+            name: 'Industrial Grade Helmets',
+            desc: 'Impact-resistant ABS shells, foam-lined inner padding, sweatband included for high-durability sites.'
+          }
+        ]
+      },
+      footSafety: {
+        title: 'Foot Protection & Safety Footwear',
+        icon: '👢',
+        items: [
+          {
+            name: 'Acme Universal Safety Shoes',
+            desc: "India's largest safety shoe manufacturer. Steel toe protection, oil-resistant PU midsole, anti-slip rubber sole, comfort-foam insole."
+          },
+          {
+            name: 'Karam Safety Shoes (Noida)',
+            desc: 'Lightweight composite toe options, water-resistant upper leather, electrical hazard (EH) rated safety shoes.'
+          },
+          {
+            name: 'Mallcom Tiger Safety Boots',
+            desc: 'High ankle design, puncture-resistant steel inner sole plate, heat-resistant outsole suitable for welding environments.'
+          },
+          {
+            name: 'Mallcom Leopard Safety Boots',
+            desc: 'Premium Mallcom sub-brand, breathable upper construction, shock-absorbing heel cushion, certified steel toe caps.'
+          }
+        ]
+      },
+      bodyProtection: {
+        title: 'Body Protection & High-Vis Wear',
+        icon: '🦺',
+        items: [
+          {
+            name: 'Udyogi High-Vis Safety Jackets',
+            desc: 'Kolkata-manufactured, high-visibility fabric with 3M reflective strips, utility storage pockets, durable canvas.'
+          },
+          {
+            name: 'Karam Protective Vests',
+            desc: 'Tool storage pockets, ergonomic lightweight fit, available in high-visibility neon yellow and orange.'
+          },
+          {
+            name: 'Leather Welding Aprons',
+            desc: 'Heavy-duty split leather construction, heat and spark resistant, full front coverage for hot work.'
+          },
+          {
+            name: 'Industrial Work Dungarees',
+            desc: 'Heavy-duty fabric, triple-stitched stress points, multiple utility pockets for durable daily operation.'
+          }
+        ]
+      },
+      handProtection: {
+        title: 'Hand Protection & Technical Gloves',
+        icon: '🧤',
+        items: [
+          {
+            name: 'Heavy-Duty Leather Work Gloves',
+            desc: 'Premium split leather, flexible hand ergonomics, suitable for material handling and construction.'
+          },
+          {
+            name: 'Cotton Jersey & Knitted Gloves',
+            desc: 'Lightweight, breathable, cost-effective hand protection for light assembly tasks.'
+          },
+          {
+            name: 'Nitrile & Latex Coated Gloves',
+            desc: 'Chemical-resistant coating, oil-repellent grip surface for wet and slippery conditions.'
+          },
+          {
+            name: 'Heat-Resistant Welding Gloves',
+            desc: 'Reinforced split leather, heat insulation up to 200°C, extended wrist cuff protection.'
+          }
+        ]
+      },
+      eyeProtection: {
+        title: 'Eye & Face Protection',
+        icon: '👓',
+        items: [
+          {
+            name: 'Clear Polycarbonate Safety Spectacles',
+            desc: '100% UV radiation protection, scratch-resistant hard coating, wrap-around side shields.'
+          },
+          {
+            name: 'Tinted Welding Goggles',
+            desc: 'Flip-up lens design, dark shade filter, adjustable elastic headband, impact-resistant.'
+          },
+          {
+            name: 'Anti-Fog Industrial Glasses',
+            desc: 'Special anti-fog coating, prescription frame compatible, ANSI Z87.1 certified.'
+          },
+          {
+            name: 'Chemical Splash Safety Goggles',
+            desc: 'Indirect ventilation ports, leak-proof seal around eyes, adjustable head strap.'
+          }
+        ]
+      },
+      respiratory: {
+        title: 'Respiratory Protection Systems',
+        icon: '🫁',
+        items: [
+          {
+            name: 'N95 Certified Dust Masks',
+            desc: 'High filtration efficacy, adjustable nose clip, soft earloops, non-woven multi-layer filter.'
+          },
+          {
+            name: 'Reusable Half-Mask Respirators',
+            desc: 'Dual cartridge bayonet system, comfortable silicone facepiece, washable design.'
+          },
+          {
+            name: 'Chemical & Vapor Cartridges',
+            desc: 'Organic vapor, acid gas, and particulate combination filters for industrial safety.'
+          },
+          {
+            name: 'Full-Facepiece Respirators',
+            desc: 'Panoramic field-of-view visor, full seal protection against toxic gases and dust.'
+          }
+        ]
+      },
+      welding: {
+        title: 'Welding Safety Equipment',
+        icon: '🔥',
+        items: [
+          {
+            name: 'Auto-Darkening Welding Helmets',
+            desc: 'Solar powered, fast response optical filter, shade adjustment DIN 9-13, dual arc sensors.'
+          },
+          {
+            name: 'Welding Sleeves & Leggings',
+            desc: 'Kevlar-stitched split leather sleeves, heat-resistant buckles for full limb protection.'
+          },
+          {
+            name: 'Leather Face Shields',
+            desc: 'Compact lightweight face shields for tight space welding applications.'
+          },
+          {
+            name: 'Welding Blankets & Curtains',
+            desc: 'Fiberglass fireproof curtains for isolating welding sparks in workshop zones.'
+          }
+        ]
+      },
+      fireSafety: {
+        title: 'Fire Safety Equipment',
+        icon: '🧯',
+        items: [
+          {
+            name: 'Omex ABC Dry Powder Extinguishers',
+            desc: 'Multi-purpose fire protection (Class A, B, C), 1kg to 6kg capacities, pressure gauge included.'
+          },
+          {
+            name: 'Omex CO2 Fire Extinguishers',
+            desc: 'Ideal for electrical equipment and flammable liquids, leaves no residue, 2kg-5kg variants.'
+          },
+          {
+            name: 'Pressurized Water Extinguishers',
+            desc: 'Effective against Class A solid fires, 9L stainless steel tank, easy maintenance.'
+          },
+          {
+            name: 'Fire Refilling & Maintenance Services',
+            desc: 'Refilling, hydraulic testing, and ISI compliance inspection services.'
+          }
+        ]
+      },
+      fallProtection: {
+        title: 'Fall Protection Systems',
+        icon: '⛓️',
+        items: [
+          {
+            name: 'Full-Body Safety Harnesses',
+            desc: 'Dorsal D-ring, adjustable thigh & chest straps, high-tenacity polyester webbing.'
+          },
+          {
+            name: 'Shock-Absorbing Lanyards',
+            desc: 'Energy absorber, scaffold hooks, dual leg lanyards for continuous anchorage.'
+          },
+          {
+            name: 'Self-Retracting Lifelines (SRL)',
+            desc: 'Automatic braking mechanism, steel cable, durable casing for high-elevation safety.'
+          },
+          {
+            name: 'Anchor Straps & Connectors',
+            desc: 'Heavy-duty webbing anchors, steel carabiners with screw-lock security.'
+          }
+        ]
+      }
+    };
+
+    // Modal Interaction Functions
+    function openModal(categoryKey) {
+      const category = productData[categoryKey];
+      if (!category) return;
+
+      document.getElementById('modalTitle').textContent = category.title;
+      document.getElementById('modalIcon').textContent = category.icon;
+
+      const itemsContainer = document.getElementById('modalItems');
+      itemsContainer.innerHTML = category.items.map(item => `
+        <div class="p-4 rounded-xl bg-slate-50 border-l-4 border-brand-500 border-y border-r border-slate-200/60 space-y-1">
+          <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wide flex items-center justify-between">
+            ${item.name}
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">${item.desc}</p>
+        </div>
+      `).join('');
+
+      const modal = document.getElementById('productModal');
+      const container = document.getElementById('modalContainer');
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        container.classList.remove('scale-95');
+        container.classList.add('scale-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('productModal');
+      const container = document.getElementById('modalContainer');
+      container.classList.remove('scale-100');
+      container.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 150);
+    }
+
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Close Modal on Overlay Click
+    document.getElementById('productModal').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('productModal')) {
+        closeModal();
+      }
+    });
+
+    // Close Modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Set Dynamic Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
