@@ -147,8 +147,17 @@
     </div>
   </header>
 
-  <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden py-20 lg:py-28">
-    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#c85a3a_1px,transparent_1px)] [background-size:16px_16px]"></div>
+  <section class="relative bg-slate-950 text-white overflow-hidden py-20 lg:py-28">
+    <!-- Hero Background Image & Layered Dark Overlays -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/hero-bg.jpg" onerror="this.onerror=null; this.src='hero-bg.jpg';" alt="Industrial Safety Equipment Background" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out">
+      <!-- Horizontal dark gradient for perfect text contrast -->
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/85 to-slate-950/75"></div>
+      <!-- Vertical edge fades -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/80"></div>
+      <!-- Subtle brand color ambient tint -->
+      <div class="absolute inset-0 bg-brand-900/10 mix-blend-color"></div>
+    </div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -183,25 +192,25 @@
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative w-full max-w-md">
             <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-500 to-brand-accent opacity-30 blur-xl animate-pulse"></div>
-            <div class="relative bg-slate-800/90 border border-slate-700 rounded-3xl p-8 shadow-2xl space-y-6">
+            <div class="relative bg-slate-900/80 backdrop-blur-xl border border-slate-700/80 rounded-3xl p-8 shadow-2xl space-y-6">
               <div class="flex items-center justify-between border-b border-slate-700/80 pb-4">
-                <span class="text-sm font-semibold text-slate-400 uppercase tracking-wider">Product Coverage</span>
+                <span class="text-sm font-semibold text-slate-300 uppercase tracking-wider">Product Coverage</span>
                 <span class="text-xs bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">100% Authentic</span>
               </div>
               <div class="grid grid-cols-2 gap-4">
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                <div class="bg-slate-950/60 backdrop-blur-sm p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
                   <span class="text-3xl mb-1">⛑️</span>
                   <span class="text-xs font-semibold text-slate-300">Head Protection</span>
                 </div>
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                <div class="bg-slate-950/60 backdrop-blur-sm p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
                   <span class="text-3xl mb-1">👢</span>
                   <span class="text-xs font-semibold text-slate-300">Foot Protection</span>
                 </div>
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                <div class="bg-slate-950/60 backdrop-blur-sm p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
                   <span class="text-3xl mb-1">🦺</span>
                   <span class="text-xs font-semibold text-slate-300">Body Protection</span>
                 </div>
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
+                <div class="bg-slate-950/60 backdrop-blur-sm p-4 rounded-xl border border-slate-700/50 flex flex-col items-center text-center">
                   <span class="text-3xl mb-1">🧯</span>
                   <span class="text-xs font-semibold text-slate-300">Fire Safety</span>
                 </div>
